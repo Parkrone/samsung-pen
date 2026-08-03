@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="lemonBtn" class="lemon-btn"></button>
-    <video id="memeVideo" loop playsinline preload="auto" style="display: none;">
+    <button id="lemonBtn" class="lemon-btn">
+        <span class="click-text">CLICK HERE</span>
+    </button>
+    
+    <!-- Removed 'loop' so the video can end and trigger the redirect -->
+    <video id="memeVideo" playsinline preload="auto" style="display: none;">
         <source src="memeVideo.mp4" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
+    
     <script src="script.js"></script>
 </body>
 </html>
