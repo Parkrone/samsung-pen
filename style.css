@@ -18,8 +18,8 @@ video {
     width: 100%;
     height: 100vh;
     border: none;
-    /* Updated to verbatim 'lemon.WEBP' */
-    background: url('lemon.WEBP') no-repeat center center;
+    /* Updated to verbatim 'samsung.gif' */
+    background: url('samsung.gif') no-repeat center center;
     background-size: contain;
     cursor: pointer;
     padding: 0;
