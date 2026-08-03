@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    font-family: sans-serif;
 }
 
 video {
@@ -17,9 +18,29 @@ video {
     width: 100%;
     height: 100vh;
     border: none;
-    background: url('lemon.webp') no-repeat center center;
+    /* Updated to verbatim 'lemon.WEBP' */
+    background: url('lemon.WEBP') no-repeat center center;
     background-size: contain;
     cursor: pointer;
     padding: 0;
     margin: 0;
+    
+    /* Added flexbox to center the click text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the new click prompt */
+.click-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    pointer-events: none; /* Ensures the click registers on the button beneath it */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
